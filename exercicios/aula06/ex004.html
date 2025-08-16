@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de strings e numeros</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            font-style: normal;
+            background-color: #3d3d3d;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt("Insira o seu nome")
+        document.write(`Ola <strong>${nome}</strong>! <br>`)
+        document.write(`Seu nome tem <strong>${nome.length}</strong> letras <br>`)
+        document.write(`Seu nome com letras maiuscula: <strong>${nome.toUpperCase()}</strong> <br>`)
+        document.write(`Seu nome com letras minusculas:<strong> ${nome.toLowerCase()}</strong> <br>`)
+        document.write(`<br>`)
+
+        // formatacao de numeros
+        var nr = Number(window.prompt("Informe um numero"))
+        document.write(`${nr} com duas casas decimais: <strong>${nr.toFixed(2)}</strong> <br>`)
+        document.write(`${nr} como dinheiro: <strong>${nr.toLocaleString("pt-MZ", {style: "currency", currency: "MZN"})}</strong>`)
+
+
+
+    </script>
+</body>
+</html>
