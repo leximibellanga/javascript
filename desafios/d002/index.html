@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Bem-vindo</title>
+</head>
+<body>
+    <h1>Seja Bem-vindo</h1>
+    <button onclick="apresentarSe()">
+        Apresentar-me
+    </button>
+    <script>
+        function apresentarSe() {
+            alert("Seja bem-vindo")
+            var nome = prompt("Seu nome?")
+            var idade = prompt(`Ola ${nome}, VC tem quantos anos de idade?`)
+            alert(`${nome} tem ${idade} anos de idade.`)
+        }
+    </script>
+</body>
+</html>
