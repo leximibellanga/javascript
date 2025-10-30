@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(70, 142, 236);
+    font-weight: normal;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.36);
+}
+
+/* inicio grid */
+section p.campo {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    justify-items: stretch;
+}
+
+p#botao input {
+    grid-column: 1 / -1;
+}
+/* fim grid */
+
+p#botao {
+    margin-top: 50px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: rgb(237, 236, 236);
+    font-size: .8em;
+}
+
+input[type=number] {
+    width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+input[type=number]:hover, input[type=number]:focus {
+    background-color: rgb(231, 230, 230);
+}
+
+input[type="button"] {
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(70, 142, 236);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(14, 106, 226);
+}
+
+select {
+    width: 50%;
+    margin-top: 20px;
+
+    option {
+        font-weight: 600;
+        font-size: 1em;
+        padding: 5px;
+    }
+}
+
+img {
+    margin: 20px 0px;
+    border-radius: 20%;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-style: italic;
+
+    a {
+        text-decoration: none;
+        color: white;
+        transition: color .3s ease;
+
+        &:hover {
+            color: rgb(14, 106, 226);
+        }
+    }
+}
+
