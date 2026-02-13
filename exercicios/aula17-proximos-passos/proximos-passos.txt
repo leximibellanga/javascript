@@ -1,0 +1,28 @@
+O que vimos ate agora no curso:
+- Fundamentos
+- Variaveis e dados
+- Operadores
+- Condicoes
+- Repeticoes
+- Arrays
+- Functions
+- DOM
+
+
+===== PROXIMOS PASSOS =====
+- Aprender HTML e CSS 
+- Functions (Intermediario e Avancado):
+    arrow functions
+    cau backs
+    funcoes anonimas 
+    IIFE
+- Estudar um pouco de JS funcional
+- Objectos
+- Modularizacao 
+- RegEx
+- JSON
+- AJAX
+- NodeJS
+
+Depois Frameworks
+- React || Vue || Angular || entre outros.

@@ -6,8 +6,12 @@ botaoComprar.addEventListener("click", function() {
     let valorPagar = Number(prompt(`Qual foi o valor que voce deu para pagar ${nomeProduto}`))
     let troco = valorPagar - valorProduto
 
-    alert(`Voce comprou ${nomeProduto} que custa ${valorProduto}MT's.
+    if (valorProduto > valorPagar) {
+        alert(`Esse valor eh pouco, por favor aumente...`)
+    } else {
+        alert(`Voce comprou ${nomeProduto} que custa ${valorProduto}MT's.
 Deu ${valorPagar}MT's em dinheiro e vai receber ${troco}MT's de troco. 
 
-Volte sempre!`)
+Volte sempre!`)    
+    }
 })
