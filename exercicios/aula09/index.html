@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos no DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 1em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos do DOM</h1>
+    <p>Aqui vai o resultado:</p>
+
+    <p>paragrafo 01</p> <!-- por marca -->
+    <p id="p2">paragrafo 02</p> <!-- por ID -->
+    <p class="p3">paragrafo 03</p> <!-- por marca -->
+    <p name="p4">paragrafo 04</p> <!-- por marca -->
+    <p id="p5">paragrafo 05</p> <!-- por marca -->
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div>    
+
+    <script>
+        // var corpo = document.body
+        // corpo.style.backgroundColor = "#333"
+
+        // Selecao por Marca
+        var p1 = window.document.getElementsByTagName('p')[1] // vai pegar o segundo paragrafo.
+        p1.innerText = 'Marca'
+
+        // Selecao por ID
+        var p2 = document.getElementById("p2")
+        p2.innerText = "ID"
+
+        // Selecao por nome de classe
+        var p3 = document.getElementsByClassName("p3")[0]
+        p3.innerText = "Classe"
+
+        // Selecao por name
+        var p4 = document.getElementsByName("p4")[0]
+        p4.innerText = "Name"
+        p4.style.backgroundColor = "#333"
+        p4.style.padding = "10px"
+        p4.style.textAlign = "center"
+
+        // Selecao por selector
+        var p5 = document.querySelector("p#p5")
+        p5.innerText = "selector"
+        p5.style.backgroundColor ="#556"
+        p5.style.padding = "20px"
+        p5.style.textAlign = "right"
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400px;
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eee;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgb(0, 0, 0, .1);
+        }
+
+        .container div {
+            margin: 10px;
+        }
+
+        .container input, button {
+            padding: 10px 15px;
+            border-radius: 4px;
+            outline: none;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+        }
+
+        button {
+            background-color: #2225ee;
+            color: #eee;
+            border-color: #2225ee; 
+        }
+
+        button:hover {
+            background-color: #0b0ee0;
+        }
+
+        #b {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <input type="number" name="v1" id="v1" value="0">
+        </div>
+        <div>
+            <input type="number" name="v2" id="v2" value="0">
+        </div>
+        <div id="b">
+            <button>Somar</button>
+        </div>
+        <div>
+            <input type="number" name="res" id="res">
+        </div>
+    </div>
+
+    <script>
+        var btn = document.getElementsByTagName("button")[0]
+
+        btn.addEventListener("click", somar)
+
+        function somar() {
+            var n1 = Number(document.getElementById("v1").value)
+            var n2 = Number(document.getElementById("v2").value)
+            var s = document.getElementById("res")
+
+            s.value = n1 + n2
+        }
+    </script>
+</body>
+</html>

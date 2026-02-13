@@ -1,5 +1,6 @@
 let inputNR = document.getElementById("inumero")
 let botao = document.getElementsByTagName("input")[1]
+
 botao.addEventListener("click", () => {
     if (inputNR.value.length == 0) {
         alert("informe um numero")

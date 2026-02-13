@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div.area {
+            background-color: rgb(0, 110, 0);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-style: 1.1em;
+            border-radius: 10px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="area" onclick="clicar()" onmouseout="sair()" onmousedown="clicarSegurar()" onmousemove="Mover()" >
+        Interaja...
+    </div>
+
+    <script>
+        var a = document.querySelector("div.area")
+        // click
+        function clicar() {
+            a.innerText = "Clicou!!!"
+            a.style.backgroundColor = "red"
+        }
+
+        // mouseenter
+        // Usando ouvido do JS
+        a.addEventListener("mouseenter", entrar)
+
+        function entrar() {
+            a.innerText = "Entrou!!!"
+            a.style.backgroundColor = "blue"
+        }
+        
+        // mouseout
+        function sair() {
+            a.innerText = "Saiu!!!"
+            a.style.backgroundColor = "green"
+        }
+
+        // mousedown
+        function clicarSegurar() {
+            a.innerText = "Clicou e segurou!!!"
+            a.style.backgroundColor = "dimgray"
+        }
+        
+        // mousemove
+        function Mover() {
+            a.innerText = "Moveu!!!"
+            a.style.backgroundColor = "#819228"
+        }
+        
+        // mouseup
+        // usando ouvido do JS
+        a.addEventListener("mouseup", soltar)
+
+        function soltar() {
+            a.innerText = "Soltou o click!!!"
+            a.style.backgroundColor = "purple"
+        }
+
+
+
+
+    </script>
+</body>
+</html>
