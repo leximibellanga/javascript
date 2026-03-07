@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color01: #e65763;
+    --color02: #34073d;
+    --color-white: white;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(to right, var(--color01), var(--color02));
+    color: var(--color-white);
+    padding-top: 30px;
+    text-align: center;
+}
+
+header,
+main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    margin-top: 40px;
+}
+
+main {
+    padding: 1rem;
+}
+/* sections  */
+section {
+    margin-top: 1rem;
+}
+
+/* form */
+form {
+    position: relative;
+}
+
+form input {
+    border: 1px solid var(--color02);
+    background-color: var(--color-white);
+    color: var(--color02);
+    padding: .95rem;
+    font-size: 1.1em;
+    width: 100%;
+    outline: none;
+    /* border-radius: 4px; */
+}
+form input::placeholder {
+    color: var(--color02);
+}
+
+form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 3px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color02);
+    cursor: pointer;
+    width: 60px;
+    height: 53px;
+    transition: all .5s;
+    font-size: 25px;
+}
+form button:hover {
+    background-color: var(--color02);
+    color: var(--color-white);
+}
+
+#task-list {
+    margin-top: .5rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-list li {
+    text-align-last: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid var(--color02);
+    background-color: var(--color-white);
+    color: var(--color02);
+    margin-bottom: 10px;
+    padding-left: .95rem;
+    font-weight: bold;
+    transition: all .5s;
+}
+#task-list i {
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;justify-content: center;
+    transition: all .5s;
+}
+#task-list .done-btn {
+    right: 30px;
+}
+#task-list .done-btn:hover {
+    background-color: seagreen;
+}
+#task-list .remove-btn {
+    right: 0;
+}
+#task-list .remove-btn:hover {
+    background-color: crimson;
+}
+
+.hide {
+    display: none;
+}
+#task-list li.done {
+    background-color: var(--color02);
+    color: var(--color-white);
+    text-decoration: line-through;
+}

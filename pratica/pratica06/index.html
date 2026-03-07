@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do - JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Salve a sua proxima tarefa</h2>
+    </header>
+
+    <main>
+        <section class="tasks-form-container">
+            <form action="" id="add-task-form" method="post">
+                <input type="text" name="task" id="task" placeholder="O que voce vai fazer?">
+                <button type="submit" id="btn">+</button>
+            </form>
+        </section>
+
+        <section id="tasks-list-container">
+            <h2>Estas sao as suas tarefas:</h2>
+
+            <ul id="task-list">
+                <li class="task-box">
+                    <span class="task-title">exemplo 01</span>
+                    <i class="done-btn">✔️</i>
+                    <i class="remove-btn">❌</i>
+                </li>
+                <li class="task-box">
+                    <span class="task-title">exemplo 02</span>
+                    <i class="done-btn">✔️</i>
+                    <i class="remove-btn">❌</i>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

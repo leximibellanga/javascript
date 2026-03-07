@@ -13,7 +13,7 @@ O que vimos ate agora no curso:
 - Aprender HTML e CSS 
 - Functions (Intermediario e Avancado):
     arrow functions
-    cau backs
+    call backs
     funcoes anonimas 
     IIFE
 - Estudar um pouco de JS funcional
